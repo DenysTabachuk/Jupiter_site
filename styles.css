@@ -6,22 +6,38 @@ html, body {
 
 
 header{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* min-height: 160xp; */
     background-color: #353232;
     display: flex;
-    align-items: center;
-    height: 150px;
-    max-height: 20%;
+    align-items: stretch;
+    
+    flex-grow: 1;
+
 }
 
 .header_h1{
+    display: flex;
+    align-items: stretch;
     padding-right: 20px;
+    flex-grow: 1;
 }
+
+.header_h1 h1{
+    flex-grow: 1;
+    align-self: right;
+    text-align: right;
+}
+
+
 
 
 
 nav{
     display: flex;
     flex-grow: 1;
+    align-items: center;
 }
 
 nav ol{
@@ -29,6 +45,7 @@ nav ol{
     list-style-type: decimal;
     text-align: center;
     padding: 0;
+    flex-grow: 1;
 }
 
 nav ol li{
