@@ -1,58 +1,94 @@
-html, body {
+html, body{
+    margin: 0;
     height: 100%;
+}
+
+p, h1, h2{
     margin: 0;
 }
 
 
+div{
+    box-sizing: border-box;
+}
+
+
+
+
+
+.table-container {
+    display: table;
+    width: 100%; 
+    height: 100%;
+}
+
+#biggest{
+    height: 83%;
+}
+
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+aside.left {
+    display: table-cell;
+    background-color: #bab8b6;
+    vertical-align: middle;
+
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size: 23px;
+    text-align: center;
+    width: 25%;
+}
+
+
+header, footer{
+    background-color: #353232;
+    color: white;
+}
+
 
 header{
-    padding-top: 25px;
-    padding-bottom: 25px;
-    /* min-height: 160xp; */
-    background-color: #353232;
-    display: flex;
-    align-items: stretch;
-    
-    flex-grow: 1;
-
-}
-
-.header_h1{
-    display: flex;
-    align-items: stretch;
-    padding-right: 20px;
-    flex-grow: 1;
-}
-
-.header_h1 h1{
-    flex-grow: 1;
-    align-self: right;
-    text-align: right;
+    display: table-row;
+    min-height: 150px;
+    height: 18%;
+    width: 100%;
 }
 
 
+header nav, header h1{
+    display: table-cell;
+    vertical-align: middle;
+}
 
 
-
-nav{
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
+header nav{
+    width: 65%;
 }
 
 nav ol{
-    flex-grow: 1;
-    list-style-type: decimal;
     text-align: center;
-    padding: 0;
-    flex-grow: 1;
 }
 
 nav ol li{
     display: inline-block;
     font-size: 22px;
     padding: 5px;
-
 }
 
 nav ol li a{
@@ -60,168 +96,72 @@ nav ol li a{
 }
 
 
+header h1{
+    text-align: right;
+    padding-right: 30px;
+}
+
+
+
+
 
 
 footer{
+    display: table;
     background-color: #353232;
-    min-height: 20%;
-    display: flex;
+    color: white;
+    min-height: 150px;
     width: 100%;
 }
 
-.footer_p{
-    display: flex;
-    flex-grow: 1;
-    justify-content: right;
-    align-content: center;
-    flex-wrap: wrap;
-    padding-right: 30px;
-
-    text-align: right;
-}
-
-
-.footer_h{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+footer h2{
     padding-left: 30px;
+    max-width: 50%;
 }
 
-
-header, footer{
-    color: white;
-}
-
-
-
-
-
-.block1{
-    background-color: #bab8b6;
-    max-width: calc(25% - 40px);
-    min-width: calc(25% - 40px);
-    font-size: 23px;
-    border-right: 1px solid #353232;
-    text-align: center;
-
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    padding-top: 20px;
+footer p{
+    text-align: right;
     padding-right: 20px;
 }
 
+main{
+    background-color: rgb(59, 106, 77);
+    width: 67%;
+    border-left: 1px solid #353232;
+    border-right: 1px solid #353232;
+}
 
-.block3{
+#right{
+    background-color: #bab8b6;
+    text-align: center;
+}
+
+
+
+
+#block3{
+    display: table-cell;
     background-color: #b9b6b4;
+    vertical-align: middle;
     border-bottom: 1px solid #353232;
 
-    text-align: right;
     padding-right: 20px;
     padding-left: 60px;
+
+    text-align: right;
 }
 
-.block4{
-    background-color: #bab8b6;
-    flex-grow: 1;
-    min-width: 33.3%;
-    max-width: 33.3%;
-    border-left: 1px solid #353232;
-
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-
-    text-align: center;
-
-}
-
-.block5{
+#block5{
+    display: table-cell;
+    vertical-align: middle;
     background-color: #cecdcc;
-    flex-grow: 1;
-
-    text-align: left;
     padding-left: 20px;
     padding-right: 60px;
 
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
 }
 
 
 
 
 
-
-
-.block_center{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-
-
-.block_center_right{
-    display: flex;
-    height: 100%;
-}
-
-
-.block_center_right_header{
-    display: flex;
-    flex-direction: column;
-
-}
-
-.block_center_right_left_header{
-    display: flex;
-    min-height: 80%;
-    align-items: stretch;
-    max-width: 100%;
-}
-
-
-
-
-
-
-img{
-    width: 100%;
-}
-
-@media (max-width: 800px) {
-    img {
-        padding-bottom: 30px; 
-        padding-top: 30px
-    }
-}
-
-
-@media (max-width: 600px) {
-    img {
-        padding-bottom: 60px; 
-        padding-top: 60px
-    }
-}
-
-@media (max-width: 920px) {
-    nav ol li{
-        display: block;
-        font-size: 0.9em;
-    }
-
-    nav{
-        flex-direction: column;
-        padding-right: 30px;
-    }
-
-    
-}
