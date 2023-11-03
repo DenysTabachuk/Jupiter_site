@@ -202,7 +202,11 @@ img{
     img{
         height: 49%;
     }
-
+}
  
-    
+@media (max-width: 1080px) and (max-height: 2340) {
+    body{
+        font-size: 2em;
+    }
+ 
 }
