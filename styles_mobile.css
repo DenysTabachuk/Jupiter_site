@@ -201,8 +201,12 @@ img{
         height: 49%;
     }
 
-    li{
-        font-size: 4em;
+    body{
+        font-size: 1.7em;
+    }
+
+    #block3 ol li{
+        font-size: 3.5em;
     }
 
     header{
@@ -216,6 +220,8 @@ img{
     footer h2{
         font-size: 3em;
     }
+
+    
 
 
 }
