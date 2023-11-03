@@ -202,8 +202,10 @@ img{
         height: 49%;
     }
 
-    body{
-        font-size: 1.7em;
+    
+
+    #block5 #block1{
+        font-size: 2em;
     }
 
     #block3 ol li{
