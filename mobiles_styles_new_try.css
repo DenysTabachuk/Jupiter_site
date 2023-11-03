@@ -41,3 +41,15 @@ header{
     
    
 }
+
+
+/* 2340x1080 */
+
+@media (max-height: 2340px) {
+    header, footer{
+        min-height: 360px;
+    }
+
+    
+   
+}
