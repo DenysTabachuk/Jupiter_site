@@ -126,6 +126,9 @@ footer h2{
 @media (min-height: 2340px) {
     body{
         grid-template-rows: minmax(400px,1fr) 2fr minmax(400px,1fr); 
-    
+        font-size: 1.8em;
     }
+
+
+
 }
