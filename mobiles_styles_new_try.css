@@ -6,9 +6,13 @@ html, body{
 
 body{
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: minmax(160px,1fr) 2fr minmax(160px,1fr); 
-    /* grid-template-rows: 1fr 2fr 1fr; */
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: minmax(160px,1fr) 1fr minmax(650px,2fr) minmax(160px,1fr);
+    grid-template-areas: 
+    'laside header header' 
+    'laside nav raside' 
+    'laside block5 raside' 
+     'footer footer footer';
 
 }
 
@@ -22,6 +26,7 @@ header{
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
+    grid-area: header;
 }
 
 #header_h1{
@@ -39,13 +44,52 @@ header{
 
 
 
+nav{
+    background-color: #b9b6b4;
+    border-left: 1px solid #353232;
+    border-right: 1px solid #353232;
+    border-bottom: 1px  solid #353232;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-area: nav;
+
+}
+
+nav ol{
+    width: 100%;
+}
+
+nav ol li{
+    display: inline-block;
+    font-size: 22px;
+    padding: 5px;
+
+}
+
+
+nav ol{
+    text-align: center;
+}
+
+nav ol li a{
+    color:aliceblue;
+}
+
+
+
+
+
+
 
 #block5{
     vertical-align: middle;
     background-color: #cecdcc;
     padding-left: 20px;
     padding-right: 60px;
-    border-bottom: 1px solid #353232;
+    border: 1px  solid #353232;
+    border-top: 0px;
+    grid-area: block5;
 }
 
 #block5 p{
@@ -57,25 +101,34 @@ header{
 
 
 
-
-#block1_4{
-    text-align: center;
+#block1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #cac6c4;
+   
+    border-bottom: 1px  solid #353232;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    padding-left:30px;
+    padding-right: 30px;
+    grid-area: laside;
 }
 
-
-#block1{
-    border-bottom: 1px solid #353232;
-    padding-top: 30px;
-    padding-bottom: 15px;
-    font-size: 1.6em;
+#block1 p{
+    display: block;
 }
 
 #block4{
-    border-bottom: 1px solid #353232;
+    background-color: #cac6c4;
+    border-bottom: 1px  solid #353232;
     padding-top:30px;
     padding-bottom: 15px;
+
     font-size: 1.6em;
+    grid-area: raside;
 }
 
 
@@ -91,6 +144,7 @@ footer{
 
     justify-content: space-between;
     align-items: center;
+    grid-area: footer;
 }
 
 footer h2{
@@ -99,36 +153,80 @@ footer h2{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-height: 730px) {
-    body{
-        grid-template-rows: minmax(160px,1fr) 2fr minmax(160px,1fr); 
-    
-    }
-    
+img{
+    width: 100%;
 }
 
 
-/* 2340x1080 */
 
-@media (min-height: 2340px) {
+
+
+
+
+
+@media (max-width: 1100px) {
     body{
-        grid-template-rows: minmax(400px,1fr) 2fr minmax(400px,1fr); 
-        font-size: 1.8em;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: minmax(160px,1fr) minmax(160px,1fr) minmax(600px,3fr) minmax(420px,1fr) minmax(160px,1fr);
+        grid-template-areas: 
+        'header header header' 
+        'nav nav nav'
+        'laside block5 block5'
+        'raside raside raside' 
+         'footer footer footer';
+    }
+
+    #block5{
+        display: flex;
+        flex-direction: column;
+    
+        justify-content: center;
+    }
+
+    img{
+        width: 45%;
+
+    }
+
+    #block4{
+        display: flex;
+        justify-content: space-around;
     }
 
 
+}
+
+
+
+
+@media (max-width: 1080px) {
+    body{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: minmax(160px,1fr) minmax(160px,1fr) minmax(600px,3fr) minmax(420px,1fr)  minmax(420px,1fr) minmax(160px,1fr);
+        grid-template-areas: 
+        'header header header' 
+        'nav nav nav'
+        'block5 block5 block5'
+        'laside laside laside' 
+        'raside raside raside' 
+         'footer footer footer';
+    }
+
+    img{
+        width: 45%;
+
+    }
+
+    #block4{
+        display: flex;
+        justify-content: space-around;
+    }
+
 
 }
+
+@media (max-height: 2340px) {
+
+}
+
+
