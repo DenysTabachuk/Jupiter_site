@@ -169,11 +169,11 @@ img{
         grid-template-columns: 50% 50%;
         grid-template-rows: minmax(160px,1fr) minmax(160px,1fr) minmax(600px,3fr) minmax(420px,1fr) minmax(160px,1fr);
         grid-template-areas: 
-        'header header header' 
-        'nav nav nav'
-        'laside block5 block5'
-        'raside raside raside' 
-         'footer footer footer';
+        'header header' 
+        'nav nav'
+        'laside block5'
+        'raside raside' 
+         'footer footer';
     }
 
     #block5{
