@@ -191,6 +191,8 @@ img{
     #block4{
         display: flex;
         justify-content: space-around;
+        border-left: 1px  solid #353232;
+        border-right: 1px  solid #353232;
     }
 
 
@@ -220,7 +222,16 @@ img{
     #block4{
         display: flex;
         justify-content: space-around;
+        border-left: 1px  solid #353232;
+        border-right: 1px  solid #353232;
     }
+
+
+    #block1{
+        border-left: 1px  solid #353232;
+        border-right: 1px  solid #353232;
+    }
+
 
 
 }
