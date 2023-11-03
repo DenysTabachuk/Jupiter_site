@@ -1,0 +1,43 @@
+html, body{
+    height:  100%;
+    margin:  0;
+    background-color: antiquewhite;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3.8fr 1fr; /* Три рядки для прикладу */
+}
+
+
+header, footer{
+    background-color: #353232;
+    color: white;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+#header_h1{
+    text-align: right;
+    padding-right: 30px;
+}
+
+#header_p{
+    text-align: center;
+    font-size: 1.4em;
+}
+
+
+@media (max-height: 734px) {
+    header, footer{
+        min-height: 160px;
+    }
+
+    
+   
+}
