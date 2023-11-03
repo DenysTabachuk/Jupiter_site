@@ -7,7 +7,9 @@ html, body{
 body{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 3.8fr 1fr; /* Три рядки для прикладу */
+    grid-template-rows: minmax(160px,1fr) 2fr minmax(160px,1fr); 
+    /* grid-template-rows: 1fr 2fr 1fr; */
+
 }
 
 
@@ -33,23 +35,97 @@ header{
 }
 
 
-@media (max-height: 734px) {
-    header, footer{
-        min-height: 160px;
-    }
 
+
+
+
+
+#block5{
+    vertical-align: middle;
+    background-color: #cecdcc;
+    padding-left: 20px;
+    padding-right: 60px;
+    border-bottom: 1px solid #353232;
+}
+
+#block5 p{
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+#block1_4{
+    text-align: center;
+    background-color: #cac6c4;
+}
+
+
+#block1{
+    border-bottom: 1px solid #353232;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 1.6em;
+}
+
+#block4{
+    border-bottom: 1px solid #353232;
+    padding-top:30px;
+    padding-bottom: 15px;
+    font-size: 1.6em;
+}
+
+
+
+
+
+
+
+footer{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2{
+    padding-right: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-height: 730px) {
+    body{
+        grid-template-rows: minmax(160px,1fr) 2fr minmax(160px,1fr); 
     
-   
+    }
+    
 }
 
 
 /* 2340x1080 */
 
-@media (max-height: 2340px) {
-    header, footer{
-        min-height: 360px;
-    }
-
+@media (min-height: 2340px) {
+    body{
+        grid-template-rows: minmax(400px,1fr) 2fr minmax(400px,1fr); 
     
-   
+    }
 }
