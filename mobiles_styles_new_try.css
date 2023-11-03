@@ -201,15 +201,15 @@ img{
 
 @media (max-width: 1080px) {
     body{
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 100%;
         grid-template-rows: minmax(160px,1fr) minmax(160px,1fr) minmax(600px,3fr) minmax(420px,1fr)  minmax(420px,1fr) minmax(160px,1fr);
         grid-template-areas: 
-        'header header header' 
-        'nav nav nav'
-        'block5 block5 block5'
-        'laside laside laside' 
-        'raside raside raside' 
-         'footer footer footer';
+        'header' 
+        'nav'
+        'block5'
+        'laside' 
+        'raside' 
+         'footer';
     }
 
     img{
